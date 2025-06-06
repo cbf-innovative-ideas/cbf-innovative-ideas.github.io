@@ -5,11 +5,23 @@
     <title>CBF Innovative Ideas</title>
 </head>
 
-<body>
+<script>
+    var img_num = 0;
+    var images = ["Aurora.jpg", "equalizer.webp"];
+
+    function body_click_handler() {
+        document.getElementById('bgm').play();
+        img_num = (img_num + 1) % images.length;
+        document.body.style.backgroundImage = `url('media/${images[img_num]}')`;
+        console.log(document.body.style.backgroundImage)
+    }
+</script>
+
+<body onclick="body_click_handler()">
     <style>
         body {
             text-align: center;
-            background-image: url('./Aurora.jpg');
+            background-image: url('./media/Aurora.jpg');
         }
 
         h1,
@@ -29,7 +41,12 @@
         src="https://www.youtube-nocookie.com/embed/djq-_n-yzLo?si=ivxsYhB1hgjdusH7&amp;controls=0"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <audio id="bgm" autoplay loop hidden>
+        <source src="./media/Jeba-Neram-bg-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 
 </html>
