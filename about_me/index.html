@@ -3,10 +3,33 @@
 
 <head>
     <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <p>Here I'm !</p>
+<body onclick="document.getElementById('bgm').play();">
+    <h1>About Me</h1>
+    <p>Hi! I am Chrison Blessed Fruit.</p>
+    <p>I am a 13 y/o boy making videos regarding Arduino (new), Vlogs, Animals,
+        inventions, and crafts. </p>
+
+    <p>Please SUPPORT US by subscribing to my youtube channel
+        share
+        AND SUBSCRIBE!
+        NEW VIDEOS COME SOON!
+    </p>
+
+    <p>With Love,<br>
+    Chrison</p>
+    <iframe width="560" height="315"
+        src="https://www.youtube-nocookie.com/embed/RkNkHNazWT8?si=JWWVgcMm5z-Z2oTN&amp;controls=0&amp;start=200"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+    <audio id="bgm" autoplay loop hidden>
+        <source src="./media/JebaNeram-bg-music-2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 
 </html>
