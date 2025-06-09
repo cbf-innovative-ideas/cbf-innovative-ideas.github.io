@@ -13,3 +13,7 @@ h1, p {
     color: rgb(255, 0, 13);
     transition: all 0.3s ease;
  }
+
+ iframe {
+    text-align: center;
+ }
